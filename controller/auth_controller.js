@@ -8,7 +8,8 @@ module.exports={
         }catch(err){
            return res.status(500).json({
              "success":false,
-             "message":"Terjadi kesalahan pada server"
+             "message":"Terjadi kesalahan pada server",
+             "error":err.toString()
            });
         }
     },
